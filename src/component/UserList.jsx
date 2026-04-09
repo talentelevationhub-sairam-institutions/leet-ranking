@@ -101,6 +101,7 @@ const UserList = ({ users }) => {
                       <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-300 font-mono">
                         {(typeof user.rank === 'number') ? user.rank.toLocaleString() : 'N/A'}
                       </td>
+
                       <td className="px-6 py-4 whitespace-nowrap text-center">
                         <span className="px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-900/50 text-blue-200 border border-blue-700/50">
                           {user.solved}
@@ -162,10 +163,11 @@ const UserList = ({ users }) => {
                         <p className="text-gray-500 text-xs uppercase mb-1">Global Rank</p>
                         <p className="text-white font-mono">{(typeof user.rank === 'number') ? user.rank.toLocaleString() : 'N/A'}</p>
                      </div>
-                     <div className="bg-slate-900/50 p-2 rounded-lg text-center">
-                        <p className="text-gray-500 text-xs uppercase mb-1">Total Solved</p>
+                      <div className="bg-slate-900/50 p-2 rounded-lg text-center">
+                        <p className="text-gray-500 text-xs uppercase mb-1">LeetCode</p>
                         <p className="text-blue-400 font-bold">{user.solved}</p>
                      </div>
+
                   </div>
 
                   <div className="flex justify-between items-center text-xs font-medium text-gray-400 px-1 mb-4">

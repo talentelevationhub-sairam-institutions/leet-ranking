@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Trophy, GraduationCap, X, MessageCircle, Brain, Crown, ChevronLeft, ChevronRight, Swords } from 'lucide-react';
+import { LayoutDashboard, Trophy, GraduationCap, X, MessageCircle, Brain, Crown, ChevronLeft, ChevronRight, Swords, BarChart3 } from 'lucide-react';
 import DailyProblem from './DailyProblem';
 
 const Sidebar = ({ isOpen, onClose, isCollapsed, toggleCollapse }) => {
@@ -11,6 +11,7 @@ const Sidebar = ({ isOpen, onClose, isCollapsed, toggleCollapse }) => {
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, path: '/' },
     { id: 'leaderboard', label: 'Leaderboard', icon: Trophy, path: '/leaderboard' },
+    { id: 'skillrack', label: 'SkillRack Tracker', icon: BarChart3, path: '/skillrack' },
     // { id: 'tournaments', label: 'Tournaments', icon: Swords, path: '/tournaments' },
     // { id: 'league-heads', label: 'League Heads', icon: Crown, path: '/league-heads' },
     { id: 'ai-tutor', label: 'AI Tutor', icon: Brain, path: '/dsa-tutor' },
@@ -18,7 +19,7 @@ const Sidebar = ({ isOpen, onClose, isCollapsed, toggleCollapse }) => {
 
   const bottomItems = [
     { id: 'leetcoder', label: 'LeetCode', icon: GraduationCap, url: 'https://leetcode.com' },
-    // { id: 'discord', label: 'Join Discord', icon: MessageCircle, url: 'https://discord.gg/ejCkm4RF' },
+    { id: 'discord', label: 'Join Discord', icon: MessageCircle, url: 'https://discord.gg/ejCkm4RF' },
   ];
 
   return (
@@ -39,7 +40,7 @@ const Sidebar = ({ isOpen, onClose, isCollapsed, toggleCollapse }) => {
             {!isCollapsed && (
               <div className="overflow-hidden whitespace-nowrap">
                 <h1 className="text-white font-bold text-lg tracking-tight">LeetRank</h1>
-                <p className="text-slate-400 text-xs">M.Tech 2027</p>
+                <p className="text-slate-400 text-xs">TEH 2027</p>
               </div>
             )}
           </div>
